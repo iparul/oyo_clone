@@ -35,7 +35,7 @@ function Header1() {
                 <Block title={'List your property'} pera={'Start earning in 30 min'} img={"/property.svg"} />
                 <Block title={'98765438733'} pera={'Call us to bbok now.'} img={"/call.svg"} />
                 <div className='flex items-center px-3' >
-                    <Image src={'/person-4.webp'} height={200} width={200} className="w-10 h-10 rounded-full mr-5" />
+                    <Image src={'/person-4.webp'} height={200} width={200} className="w-10 h-10 rounded-full mr-5" alt="oyo" />
                 </div>
 
 

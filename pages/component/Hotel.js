@@ -13,7 +13,7 @@ const Hotel = ({ e }) => {
 
                     {e ? e?.gallery?.map((ele) => {
                         return (
-                            <Image src={ele} alt="imagHotel" width={200} height={200} className=" w-28 h-14" />
+                            <Image src={ele} alt="imagHotel" width={200} height={200} className=" w-28 h-14" key={ele} />
                         )
                     }) : ""}
                 </div>
@@ -27,7 +27,7 @@ const Hotel = ({ e }) => {
                                     return (
 
                                         <li key={ele.name} className="mr-10 mb-3 flex items-center">
-                                            <span><Image src={ele.img} width={200} height={200} className="w-8 h-8 rounded-full" /></span>
+                                            <span><Image src={ele.img} width={200} height={200} className="w-8 h-8 rounded-full" alt="abc" /></span>
                                             <span className="ml-5">{ele.name}</span>
                                         </li>
 

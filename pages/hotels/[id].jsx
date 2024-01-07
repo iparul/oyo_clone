@@ -41,7 +41,7 @@ function SingleHotel({ hotel }) {
                                 return (
 
                                     <li key={ele.name} className="mr-10 mb-3 flex items-center">
-                                        <span><Image src={ele.img} width={200} height={200} className="w-8 h-8 rounded-full" /></span>
+                                        <span><Image src={ele.img} width={200} height={200} className="w-8 h-8 rounded-full" aly="abc" /></span>
                                         <span className="ml-5">{ele.name}</span>
                                     </li>
 

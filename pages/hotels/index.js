@@ -27,9 +27,7 @@ function Hotels({ hotels }) {
 
     useEffect(() => {
         handleCheckList()
-    }, [
-        checkList
-    ])
+    }, [checkList])
     return (
         <>
             <Header1 />
@@ -42,12 +40,12 @@ function Hotels({ hotels }) {
 
                     {
                         list.length > 0 ? list.map((e) => {
-                            return (<div className="m-5 ">
+                            return (<div className="m-5 " key={e?.id} >
                                 <Hotel e={e} />
                             </div>)
                         }) : hotels ? hotels.map((e) => {
                             return (
-                                <div className="m-5 ">
+                                <div className="m-5 " key={e?.id}>
                                     <Hotel e={e} />
                                 </div>
                             )

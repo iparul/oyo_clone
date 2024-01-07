@@ -46,7 +46,7 @@ const Filters = ({ price, setPrice, handlePrice, heckList, setCheckList }) => {
                         return (
                             <p className="grid grid-cols-4 items-center my-3" key={e}>
                                 <label htmlFor="checkbox" className="col-span-2">{e}</label>
-                                <input type="checkbox" name="checkbox" id="checkbox" className="w-5 h-5 ml-3 col-span-2" value={e} onChange={handleCheckList} />
+                                <input type="checkbox" name="checkbox" id="checkbox" className="w-5 h-5 ml-3 col-span-2" value={e} onChange={(e) => handleCheckList(e)} />
                             </p>
                         )
                     })}

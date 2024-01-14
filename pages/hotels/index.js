@@ -59,7 +59,7 @@ function Hotels({ hotels }) {
 }
 
 export async function getServerSideProps(ctx) {
-    const res = await fetch(`${process.env.BASE_URL}/api/hotels?city=${ctx.query.city}`)
+    const res = await fetch(`https://oyo-clone-fullstack.vercel.app/api/hotels?city=${ctx.query.city}`)
     const data = await res.json()
     return {
         props: {
